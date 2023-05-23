@@ -1,0 +1,85 @@
+* {/*body geral do html*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+textarea::-webkit-scrollbar {/*linha onde passa a barra de rolagem do campo a ser digitado*/
+  width: 12px;
+  background-color: whitesmoke; /*whitesmoke*/
+}
+
+textarea::-webkit-scrollbar-thumb {/*barra de rolagem em sim*/
+  border-radius: 10px;
+  background-color: darkgray; 
+}
+
+p {/*titulo reconhecimento de voz*/
+  color: #42c920;/*#42c920*/
+  font-size: 3rem;
+}
+
+.speech{/*div q cobre toda a aplicação*/
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(36, 32, 36);/*a cor fica toda roxa nesse caso pois cobre toda div,, blueviolet*/
+}
+
+#textarea {/*campo a ser digitado*/
+  width: 80%;
+  height: 40%;
+  margin: 50px auto;/*margem em baixo 50px espaçamento e resto fica automatico*/
+  padding: 1rem;
+  border: none;
+  outline: 0;/*remove a borda quando clicado no campo*/
+  text-align: justify;
+}
+
+.fas {/*todos os icones*/
+  font-weight: 600;
+  font-size: 3rem;
+  color: black;
+  min-width: 4rem;
+}
+
+button { 
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;/*deixa botão arredondado mais bonito*/
+  /* background-color: rgb(66,201,32); */
+}
+
+.fa-trash-alt{
+  color: red;
+}
+
+.fa-download{
+  color: blueviolet;
+}
+
+@media(max-width: 700px) {/*deixando responsivo*/
+  p {
+    font-size: 2rem;
+  }
+  
+  .fas {
+    min-width: 3rem;
+  }
+}
+
+
+#textareai {/*campo a ser digitado*/
+  width: 80%;
+  height: 40%;
+  margin: 50px auto;/*margem em baixo 50px espaçamento e resto fica automatico*/
+  padding: 1rem;
+  border: none;
+  outline: 0;/*remove a borda quando clicado no campo*/
+  text-align: justify;
+}
