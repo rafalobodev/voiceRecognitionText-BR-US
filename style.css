@@ -47,6 +47,32 @@ p {/*titulo reconhecimento de voz*/
   min-width: 4rem;
 }
 
+.fa-copy {
+  color: green;
+}
+
+.msg-copy {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #d4edda;
+  color: #155724;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+.msg-copy.show {
+  visibility: visible;
+  opacity: 1;
+}
+
 button { 
   padding: 15px;
   border: none;

@@ -1,6 +1,7 @@
 const textarea = document.querySelector("#textarea")//campo de texto
 const btnGravar = document.querySelector("#btnGravar")//gravador
 const btnParar = document.querySelector("#btnParar")
+const btnCopiar = document.querySelector("#btnCopiar")
 const btnBaixar = document.querySelector("#btnBaixar")
 const btnLimpar = document.querySelector("#btnLimpar")//pegando tudo com querySelector
 
@@ -45,6 +46,16 @@ class speechApi {
     btnParar.disabled = true
     speech.stop()
   })
+
+  btnCopiar.addEventListener("click", () => {
+  textarea.select()
+  document.execCommand("copy")
+
+  const msg = document.getElementById("msgCopy")
+  msg.textContent = "Copiado!"
+  msg.classList.add("show")
+  setTimeout(() => msg.classList.remove("show"), 1000)
+})
 
   btnBaixar.addEventListener('click', () => {//botão baixar
     var text = textarea.value //pega o texto do textarea
@@ -125,6 +136,16 @@ class speechApii {
     btnParari.disabled = true
     speechi.stopi()
   })
+
+  btnCopiari.addEventListener("click", () => {
+  textareai.select()
+  document.execCommand("copy")
+
+  const msgi = document.getElementById("msgCopyi")
+  msgi.textContent = "Copied!"
+  msgi.classList.add("show")
+  setTimeout(() => msgi.classList.remove("show"), 1000)
+})
 
   btnBaixari.addEventListener('click', () => {//botão baixar
     var texti = textareai.value //pega o texto do textarea
